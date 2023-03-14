@@ -40,8 +40,8 @@ class AkunBank:
                     status = 2
                 else:
                     status = 0
+                    self.__jumlah_saldo -= jumlahTransfer
                 break
-                self.__jumlah_saldo -= jumlahTransfer
             elif (rekTujuan != i.__no_pelanggan):
                 status = 1
 
